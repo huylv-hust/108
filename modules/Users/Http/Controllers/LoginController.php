@@ -2,7 +2,7 @@
 
 use Pingpong\Modules\Routing\Controller;
 
-class UsersController extends Controller {
+class LoginController extends Controller {
 
 	public function index()
 	{

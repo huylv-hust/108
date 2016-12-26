@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace Modules\Users\Http\Requests;
 
-class CityPostRequest extends Request
+use App\Http\Requests\Request;
+
+class LoginRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -17,7 +19,8 @@ class CityPostRequest extends Request
     public function messages()
     {
         return [
-            'name.required' => 'City name is required',
+            'username.required' => 'Hãy Nhập Tên Đăng Nhập',
+            'password.required' => 'Hãy Nhập Mật Khẩu',
         ];
     }
 
@@ -29,7 +32,8 @@ class CityPostRequest extends Request
     public function rules()
     {
         return [
-            'name' => 'required|max:100|unique:cities',
+            'username' => 'required|max:25',
+            'password' => 'required|max:25',
         ];
     }
 

@@ -1,7 +1,25 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Huy
- * Date: 12/26/2016
- * Time: 3:39 PM
- */
+<?php namespace Modules\Users\Http\Controllers\Admin;
+
+use Pingpong\Modules\Routing\Controller;
+
+class UsersController extends Controller {
+
+    public function index()
+    {
+        return view('admin/login');
+    }
+
+    public function login()
+    {
+    }
+
+    public function getCreate()
+    {
+
+    }
+
+    public function postCreate()
+    {
+
+    }
+}
