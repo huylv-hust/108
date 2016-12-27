@@ -5,7 +5,8 @@ use Illuminate\Support\Facades\Session;
 use Modules\Users\Http\Requests\LoginRequest;
 use Pingpong\Modules\Routing\Controller;
 
-class LoginController extends Controller {
+class LoginController extends Controller
+{
 
     public function index()
     {
@@ -17,6 +18,7 @@ class LoginController extends Controller {
         $fillter = $request->all();
         $data = $user->checkLogin($fillter);
         if ($data) {
+            return redirect()->route('home_admin');
         }
         Session::flash('error', 'Sai Tên Đăng Nhập hoặc Mật Khẩu!');
 
@@ -25,11 +27,9 @@ class LoginController extends Controller {
 
     public function getCreate()
     {
-
     }
 
     public function postCreate()
     {
-
     }
 }

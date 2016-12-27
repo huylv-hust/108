@@ -53,6 +53,7 @@ var home = function () {
 
     var select_menu = function () {
         var CURRENT_URL = window.location.href.split('#')[0].split('?')[0];
+        console.log(CURRENT_URL)
         $('#sidebar-menu').find('a[href="' + CURRENT_URL + '"]').parent('li').addClass('current-page');
 
         $('#sidebar-menu').find('a').filter(function () {
@@ -66,6 +67,7 @@ var home = function () {
         init: function () {
             menu_toggle();
             sidebar_menu();
+            select_menu();
         }
     };
 }();

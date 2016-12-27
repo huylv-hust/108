@@ -128,7 +128,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="" class="site_title"><i class="fa fa-paw"></i> <span>Quán 108</span></a>
+                        <a href="{{\Illuminate\Support\Facades\URL::to('/admin/home')}}" class="site_title"><i class="fa fa-paw"></i> <span>Quán 108</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -154,59 +154,59 @@
                             <ul class="nav side-menu">
                                 <li><a><i class="fa fa-user"></i>Người Dùng<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Người Dùng</a></li>
-                                        <li><a href="">Tạo Mới Người Dùng</a></li>
-                                        <li><a href="">Thời Gian Làm Việc</a></li>
+                                        <li><a href="{{\Illuminate\Support\Facades\URL::to('/admin/users')}}">Danh Sách Người Dùng</a></li>
+                                        <li><a href="#">Tạo Mới Người Dùng</a></li>
+                                        <li><a href="#">Thời Gian Làm Việc</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-user-circle"></i>Khách Hàng<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Khách Hàng</a></li>
-                                        <li><a href="">Tạo Mới Khách Hàng</a></li>
+                                        <li><a href="#">Danh Sách Khách Hàng</a></li>
+                                        <li><a href="#">Tạo Mới Khách Hàng</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-cubes"></i>Danh Mục Sản Phẩm<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Danh Mục</a></li>
-                                        <li><a href="">Tạo Mới Danh Mục</a></li>
+                                        <li><a href="#">Danh Sách Danh Mục</a></li>
+                                        <li><a href="#">Tạo Mới Danh Mục</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-cutlery"></i>Sản Phẩm<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Sản Phẩm</a></li>
-                                        <li><a href="">Tạo Mới Sản Phẩm</a></li>
+                                        <li><a href="#">Danh Sách Sản Phẩm</a></li>
+                                        <li><a href="#">Tạo Mới Sản Phẩm</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-shopping-bag"></i>Đơn Hàng<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Đơn Hàng</a></li>
-                                        <li><a href="">Tạo Mới Đơn Hàng</a></li>
+                                        <li><a href="#">Danh Sách Đơn Hàng</a></li>
+                                        <li><a href="#">Tạo Mới Đơn Hàng</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-money"></i>Thu Chi<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Tiền Chi</a></li>
-                                        <li><a href="">Tiền Lãi</a></li>
+                                        <li><a href="#">Tiền Chi</a></li>
+                                        <li><a href="#">Tiền Lãi</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-edit"></i>Tuyển Dụng<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Tuyển Dụng</a></li>
-                                        <li><a href="">Tạo Mới Tuyển Dụng</a></li>
+                                        <li><a href="#">Danh Sách Tuyển Dụng</a></li>
+                                        <li><a href="#">Tạo Mới Tuyển Dụng</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-newspaper-o"></i>Tin Tức<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Danh Sách Tin Tức</a></li>
-                                        <li><a href="">Tạo Mới Tin Tức</a></li>
+                                        <li><a href="#">Danh Sách Tin Tức</a></li>
+                                        <li><a href="#">Tạo Mới Tin Tức</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-home"></i>Cài Đặt<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="">Khuyến Mại</a></li>
-                                        <li><a href="">Giao Diện</a></li>
-                                        <li><a href="">Công Việc</a></li>
-                                        <li><a href="">Liên Hệ</a></li>
+                                        <li><a href="#">Khuyến Mại</a></li>
+                                        <li><a href="#">Giao Diện</a></li>
+                                        <li><a href="#">Công Việc</a></li>
+                                        <li><a href="#">Liên Hệ</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -221,7 +221,9 @@
             </div>
 
             <!-- top content -->
-            @yield('content')
+            <div class="right_col" role="main">
+                @yield('content')
+            </div>
             <!-- end content -->
 
             <!-- footer content -->

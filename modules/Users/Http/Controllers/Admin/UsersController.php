@@ -6,7 +6,7 @@ class UsersController extends Controller {
 
     public function index()
     {
-        return view('admin/login');
+        return view('users::admin/list');
     }
 
     public function login()

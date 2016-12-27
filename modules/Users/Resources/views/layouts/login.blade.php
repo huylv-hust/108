@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
-	<title>Phở 108 - Admin</title>
+	<title>Quán 108 - Admin</title>
 
 	<script src="{{asset('js/jquery.js')}}"></script>
 	<script src="{{asset('js/select2.min.js')}}"></script>

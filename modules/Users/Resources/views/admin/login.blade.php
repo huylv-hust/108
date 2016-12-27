@@ -4,7 +4,7 @@
         {{Form::open(array('url'=> route('admin_login'), 'class'=>'form-signin', 'method'=>'post'))}}
         <div class="login-form">
             <div>
-                <p class="title">Phở 108</p>
+                <p class="title">Quán 108</p>
             </div>
             @if(Session::has('error'))
                 <div class="alert alert-danger message-error">
