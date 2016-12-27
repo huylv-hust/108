@@ -68,6 +68,7 @@ var home = function () {
             menu_toggle();
             sidebar_menu();
             select_menu();
+            setContentHeight();
         }
     };
 }();

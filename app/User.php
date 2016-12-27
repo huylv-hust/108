@@ -10,7 +10,7 @@ class User extends Model
     protected $fields = ['name'];
     private $obj;
 
-    public function getAllCity()
+    public function getAllUser()
     {
         $result = User::all();
         return $result;
@@ -32,9 +32,9 @@ class User extends Model
     public function getList($filter = [])
     {
         $query = DB::table($this->table);
-        if(isset($filter['name']) && $filter['name'])
+        if(isset($filter['username']) && $filter['username'])
         {
-            $query->where('name', 'like', '%'.$filter['name'].'%');
+            $query->where('username', 'like', '%'.$filter['username'].'%');
         }
 
         return $query->paginate(20);
