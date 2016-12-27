@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76b770af-5905-4d97-b3e8-e951e780062d" name="Default" comment="">
+    <list default="true" id="76b770af-5905-4d97-b3e8-e951e780062d" name="Default" comment="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.env.example" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
