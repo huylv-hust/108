@@ -31,8 +31,12 @@ class UsersController extends Controller {
 
     }
 
-    public function postEdit($id)
+    public function postEdit(Request $request, $id)
     {
+        if ($request->all()) {
 
+        }
+        $data['user'] = User::find($id);
+        return view('users::admin/edit',$data);
     }
 }
